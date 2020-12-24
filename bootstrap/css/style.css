@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.jumbotron {
+    padding-top: 15px;
+    margin-top: -15px;
+    margin-bottom: -25px;
+    overflow-x: hidden;
+}
+
+.logo {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 28px;
+}
+
+
+

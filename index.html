@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/" />
+    <title>Just</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Estilos customizados para esse template -->
+    <link href="bootstrap/css/estilo.css" rel="stylesheet" />
+    <!-- Estilo para botão Toggle Switch-->
+    <link href="bootstrap/css/bootstrap-toggle.min.css" rel="stylesheet" />
+
+</head>
+
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="d-flex justify-content-start inicio">
+            <img class="logo" src="img/new_logo.png" alt="">
+            <span class="menu">
+                <h4>Just System</h4>
+            </span>
+        </div>
+        <form class="form-inline">
+
+            <a href="javascript:;" class="btn-usuario" data-toggle="modal" data-target="#modalExemplo">Usuário</a>
+
+            <a href="login.html" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Sair</a>
+        </form>
+    </nav>
+</header>
+
+<body>
+
+    <section class="form-modal">
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Dados do usuário</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p></p><label>Nome:</label></p>
+                        <p><label>Matrícula:</label></p>
+                        <p><label>CPF:</label></p>
+                        <p><label>RG:</label></p>
+                        <hr>
+                        <h5>Just</h5>
+                        <p>Lembra da sua senha?</p>
+                        <a href="mudarsenha.html">Deseja alterar sua senha?</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+
+        <div class="card borda">
+
+            <div class="card-header"><i class="fa fa-align-justify"></i> Preencha os campos</div>
+            <div class="card-body">
+
+                <form class="campo">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Label exemplo</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Input exemplo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Outra label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Outro input" />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Outra label 2</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Outro input" />
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Outra label 3</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Outro input" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="espaco">
+
+    </section>
+
+    <section class="tabela">
+
+        <div class="col-lg-12">
+            <div class="card borda2">
+                <div class="card-header"><i class="fa fa-align-justify"></i> Lista de usuários</div>
+                <div class="card-body">
+                    <table class="table table-responsive-sm table-striped">
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Data de Registro</th>
+                                <th>Status</th>
+                                <th>Editar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chevrolet</td>
+                                <td>da Silva Ford</td>
+                                <td>2012/01/01</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Generosa</td>
+                                <td>Farias</td>
+                                <td>2012/02/01</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Epílogo</td>
+                                <td>de Campos</td>
+                                <td>2012/02/01</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hermenegildo</td>
+                                <td>Calças</td>
+                                <td>2012/03/01</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Saturnino Ponte</td>
+                                <td>do Norte</td>
+                                <td>2012/01/21</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturnino Ponte</td>
+                                <td>do Norte</td>
+                                <td>2012/01/21</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <span>
+                                        <a href="" class="btn btn-info btn-sm">
+                                            Alterar
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5518XXXXXXX" target="_blank">
+            <img src="https://i.imgur.com/ryESuZ5.png" style="height:64px; position:fixed; 
+                    bottom: 25px; right: 25px; z-index:99999;" data-selector="img"></a>
+    </section>
+
+    <section class="rodape>">
+        <footer>
+            <p class="mt-2 mb-1 text-muted just">
+                &copy; 2020&nbsp;Just Consultoria e Tecnologia
+            </p>
+        </footer>
+    </section>
+
+
+    <!--javascript-->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-toggle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
